@@ -181,31 +181,6 @@
         <a href="miscgame/smash.html">Super Smash Bros (N64)</a>
         <hr>
     </div>
-    <body>
-    <input type="text" id="urlInput" placeholder="Enter a URL">
-    <button onclick="checkURL()">Check URL</button>
-
-    <script>
-        async function checkURL() {
-            const url = document.getElementById('urlInput').value;
-            const targetWord = "yes"; // Replace "yes" with the word you want to check
-
-            try {
-                const response = await fetch(url);
-                const text = await response.text();
-
-                if (text.includes(targetWord)) {
-                    window.location.href = "https://www.example.com"; // Replace with your redirect URL
-                } else {
-                    alert("Word not found!");
-                }
-            } catch (error) {
-                alert("There was an error fetching the URL!");
-                console.error("Error:", error);
-            }
-        }
-    </script>
-</body>
 
     <footer>
         <img src="mediamisc/download.gif" alt="hey bozo we're under construction!!">
@@ -217,17 +192,12 @@
     </footer>
 
 </body>
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>URL Word Checker</title>
-</head>
 <body>
     <button onclick="checkURL()">Check URL</button>
 
     <script>
         async function checkURL() {
-            const url = "https://ethandupe.github.io/wordupdate"; // Set your URL here
+            const url = "https://ethandupe.github.io/wordupdater.html"; // Set your URL here
             const targetWord = "yes"; // Replace "yes" with the word you want to check
 
             try {
